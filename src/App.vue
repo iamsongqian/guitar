@@ -2,8 +2,9 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <Myex />
     <Hello />
+    <Myex />
+    <router-link :to="{ name: 'Myex', params: { 'userId': 1111}}">click to news page</router-link>
   </div>
 </template>
 <script>

@@ -1,15 +1,19 @@
 <template>
   <div class="hello">
-    <h1>1</h1>
+     this is the news page.the transform param is {{this.$route.params.userId}}
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'HelloWorld',
+  mounted(){
+    console.log()
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App11'
     }
   }
 }
