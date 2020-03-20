@@ -5,3 +5,10 @@ export const userSigninRequest = userData => {
     return axios.post('/api/users',userData)
   }
 }
+
+export const logIn = name => {
+  return {
+    type: 'LOGIN',
+    name:name
+  }
+}

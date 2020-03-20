@@ -1,11 +1,19 @@
-import React from 'react'
-import { withRouter } from 'react-router-dom'
-const App = props => {
-  console.log(props)
-  return (
-    <div>
-      <h2>Welcome:{props.location.state?.name}</h2>
-    </div>
-  )
+import React from "react";
+import { connect } from 'react-redux';
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>{this.props.name}</h1>
+      </div>
+    );
+  }
 }
-export default withRouter(App)
+
+const mapStateToProps = (state) => {
+  return {
+    name:state.logInfo.name
+  }
+}
+
+export default connect(mapStateToProps,null)(App);

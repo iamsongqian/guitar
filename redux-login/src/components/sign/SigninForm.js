@@ -20,6 +20,7 @@ const SigninForm = props => {
       props.history.push("/", {
         name: result.data.username
       });
+      props.logIn(values.username)
     } catch (error) {
       message.error(`error==>${error.response.status}`);
       setIsloading(false);
