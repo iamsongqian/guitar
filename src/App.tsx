@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import WaveSurfer from 'wavesurfer.js';
-// eslint-disable-next-line import/extensions
 import TimelinePlugin from 'wavesurfer.js/dist/plugin/wavesurfer.timeline.min.js';
-import song from './song.mp3';
+const song = require('./song.mp3');
 
 // import MinimapPlugin from 'wavesurfer.js/dist/plugin/wavesurfer.minimap.min.js';
 // import CursorPlugin from 'wavesurfer.js/dist/plugin/wavesurfer.cursor.min.js';
